@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link
+         rel="icon"
+         type="image/svg+xml"
+         href="/vite.svg" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0" />
+      <title>Vite App</title>
+      <link
+         rel="stylesheet"
+         href="style.css" />
+   </head>
+   <body>
+      <div>
+         <button id="vSobres_btAgregar">Agregar sobre</button>
+         <button id="vSobres_btEliminar">Eliminar sobre</button>
+      </div>
+      <table>
+         <thead>
+            <tr>
+               <th>Código</th>
+               <th>Valor billete</th>
+               <th>Cantidad</th>
+               <th>Subtotal</th>
+            </tr>
+         </thead>
+         <tbody id="vSobres_rptrSobres">
+            <tr>
+               <td class="vSobres_codigo">--</td>
+               <td class="vSobres_valorBillete">--</td>
+               <td class="vSobres_cantidad">--</td>
+               <td class="vSobres_subTotal">--</td>
+            </tr>
+         </tbody>
+      </table>
+      <p>
+         El total de dinero en todos los sobres es de $<span
+            id="vSobres_lblTotalDinero"></span>
+      </p>
+      <script
+         type="module"
+         src="/main.js"></script>
+   </body>
+</html>
