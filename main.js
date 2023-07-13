@@ -29,6 +29,18 @@ class Cl_sobre {
    get codigo() {
       return this._codigo;
    }
+   set valorBillete(v) {
+      this._valorBillete = +v;
+   }
+   get valorBillete() {
+      return this._valorBillete;
+   }
+   set cantidad(c) {
+      this._cantidad = +c;
+   }
+   get cantidad() {
+      return this._cantidad;
+   }
    subTotal() {
       return this.valorBillete * this.cantidad;
    }
@@ -45,8 +57,10 @@ class Cl_sobres {
 
    eliminar(codigo) {
       for (let pos = 0; pos < this.arrSobres.length; pos++) {
-         if (this.arrSobres[pos].codigo === codigo)
+         if (this.arrSobres[pos].codigo === codigo) {
             this.arrSobres.splice(pos, 1);
+            pos--;
+         }
       }
    }
    existe(codigo) {
